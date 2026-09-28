@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="Arvin Buenavista personal portfolio" />
+    <title>Skills · Arvin Buenavista</title>
+    <script>
+      (() => {
+        const savedTheme = localStorage.getItem("portfolio-theme");
+        const prefersLight = window.matchMedia("(prefers-color-scheme: light)").matches;
+        if (savedTheme === "light" || (!savedTheme && prefersLight)) {
+          document.documentElement.classList.add("light");
+        }
+      })();
+    </script>
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="logo" href="index.html">Arvin<span>.</span></a
+        ><button class="menu-btn" aria-label="Open menu">☰</button>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <button class="theme-btn desktop-theme" aria-label="Switch to light mode">
+          Light mode
+        </button>
+      </div>
+    </header>
+    <main class="container page">
+      <header class="page-head">
+        <div class="eyebrow">Skills</div>
+        <h1>Tools & Capabilities</h1>
+        <p>
+          Skills developed through coursework, practice, and system-development
+          projects.
+        </p>
+      </header>
+      <section class="card skills">
+        <div class="skill-row">
+          <div class="skill-top"><span>HTML & CSS</span><span>85%</span></div>
+          <div class="bar" style="--w: 85%"><i></i></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-top"><span>JavaScript</span><span>65%</span></div>
+          <div class="bar" style="--w: 65%"><i></i></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-top"><span>PHP</span><span>50%</span></div>
+          <div class="bar" style="--w: 50%"><i></i></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-top"><span>Java</span><span>50%</span></div>
+          <div class="bar" style="--w: 50%"><i></i></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-top"><span>MySQL</span><span>50%</span></div>
+          <div class="bar" style="--w: 50%"><i></i></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-top"><span>UI/UX Design</span><span>70%</span></div>
+          <div class="bar" style="--w: 70%"><i></i></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-top">
+            <span>Adobe Illustrator</span><span>80%</span>
+          </div>
+          <div class="bar" style="--w: 80%"><i></i></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-top">
+            <span>Adobe Photoshop</span><span>70%</span>
+          </div>
+          <div class="bar" style="--w: 70%"><i></i></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-top">
+            <span>Cisco Packet Tracer</span><span>79%</span>
+          </div>
+          <div class="bar" style="--w: 79%"><i></i></div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">© 2026 Arvin Buenavista · Personal Portfolio</div>
+    </footer>
+    <button id="topBtn" class="top-btn" aria-label="Scroll to top">↑</button>
+    <script src="assets/script.js"></script>
+  </body>
+</html>

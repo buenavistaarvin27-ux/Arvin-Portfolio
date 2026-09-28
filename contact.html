@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="Arvin Buenavista personal portfolio" />
+    <title>Contact · Arvin Buenavista</title>
+    <script>
+      (() => {
+        const savedTheme = localStorage.getItem("portfolio-theme");
+        const prefersLight = window.matchMedia("(prefers-color-scheme: light)").matches;
+        if (savedTheme === "light" || (!savedTheme && prefersLight)) {
+          document.documentElement.classList.add("light");
+        }
+      })();
+    </script>
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="logo" href="index.html">Arvin<span>.</span></a
+        ><button class="menu-btn" aria-label="Open menu">☰</button>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <button class="theme-btn desktop-theme" aria-label="Switch to light mode">
+          Light mode  
+        </button>
+      </div>
+    </header>
+    <main class="container page">
+      <header class="page-head">
+        <div class="eyebrow">Contact</div>
+        <h1>Let's Connect</h1>
+        <p>
+          Use the form below for a project, school collaboration, or
+          professional inquiry.
+        </p>
+      </header>
+      <div class="grid two">
+        <section class="card contact-links">
+          <h2>Contact Details</h2>
+          <a class="contact-link" href="https://www.facebook.com/vbinten.g/" target="_blank" rel="noopener"
+            ><span class="social-badge facebook" aria-hidden="true">f</span> Facebook</a
+          ><a
+            class="contact-link"
+            href="https://github.com/buenavistaarvin27-ux/Arvin.git"
+            target="_blank"
+            rel="noopener"
+            ><span class="social-badge github" aria-hidden="true">g</span> GitHub</a
+          ><a
+            class="contact-link"
+            href="https://www.linkedin.com/in/arvin-buenavista-8b483a2ab/"
+            target="_blank"
+            rel="noopener"
+            ><span class="social-badge linkedin" aria-hidden="true">in</span> LinkedIn</a
+          >
+        </section>
+        <section class="card">
+          <h2>Send a Message</h2>
+          <form id="contactForm" novalidate>
+            <div class="field">
+              <label for="name">Name</label
+              ><input
+                id="name"
+                name="name"
+                type="text"
+                placeholder="Example: Arvin Buenavista"
+              />
+              <div id="nameError" class="error"></div>
+            </div>
+            <div class="field">
+              <label for="email">Email</label
+              ><input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="Example: Arvin@gmail.com"
+              />
+              <div id="emailError" class="error"></div>
+            </div>
+            <div class="field">
+              <label for="message">Message</label
+              ><textarea
+                id="message"
+                name="message"
+                placeholder="Write your message..."
+              ></textarea>
+              <div id="messageError" class="error"></div>
+            </div>
+            <button class="btn btn-primary" type="submit">
+              Validate Message
+            </button>
+            <div id="formStatus" class="success" aria-live="polite"></div>
+          </form>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">© 2026 Arvin Buenavista · Personal Portfolio</div>
+    </footer>
+    <button id="topBtn" class="top-btn" aria-label="Scroll to top">↑</button>
+    <script src="assets/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="Arvin Buenavista personal portfolio" />
+    <title>Projects · Arvin Buenavista</title>
+    <script>
+      (() => {
+        const savedTheme = localStorage.getItem("portfolio-theme");
+        const prefersLight = window.matchMedia("(prefers-color-scheme: light)").matches;
+        if (savedTheme === "light" || (!savedTheme && prefersLight)) {
+          document.documentElement.classList.add("light");
+        }
+      })();
+    </script>
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="logo" href="index.html">Arvin<span>.</span></a
+        ><button class="menu-btn" aria-label="Open menu">☰</button>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <button class="theme-btn desktop-theme" aria-label="Toggle theme">
+          ☾
+        </button>
+      </div>
+    </header>
+    <main class="container page">
+      <header class="page-head reveal">
+        <div class="eyebrow">Projects</div>
+        <h1>Selected Work</h1>
+        <p>
+          Sample academic and personal projects showing development, design, and
+          problem-solving skills.
+        </p>
+      </header>
+      <div class="filters reveal">
+        <button class="filter active" data-filter="all">All</button
+        ><button class="filter" data-filter="web">Web</button
+        ><button class="filter" data-filter="design">Designs</button>
+        <button class="filter" data-filter="networking">Networking</button>
+      </div>
+      <section class="grid two">
+        <article class="card project-card reveal" data-category="web system">
+          <img
+            class="project-img zoomable"
+            src="assets/project1.png"
+            alt="Rice and Corn Milling Record System"
+          />
+          <h2>Cafe ni Arvin System</h2>
+          <p class="muted">
+            A cafe management system designed to track transactions, inventory,
+            sales, schedules, and reports for efficient daily operations.
+          </p>
+          <div class="tags">
+            <span class="tag">HTML/CSS</span><span class="tag">PHP</span>
+          </div>
+        </article>
+        <article class="card project-card reveal" data-category="design">
+          <img
+            class="project-img zoomable"
+            src="assets/project2.png"
+            alt="Scholarship Tracking System"
+          />
+          <h2>Scholarship Tracking System</h2>
+          <p class="muted">
+            A digital concept for monitoring scholarship information and
+            improving access to student records.
+          </p>
+          <div class="tags">
+            <span class="tag">Adobe Illustrator</span>
+          </div>
+        </article>
+        <article class="card project-card reveal" data-category="networking">
+          <img
+            class="project-img zoomable"
+            src="assets/project3.png"
+            alt="Network Topology Design"
+          />
+          <h2>Network Topology Design</h2>
+          <p class="muted">
+            A visual representation of a network infrastructure with optimized
+            routing and connectivity.
+          </p>
+          <div class="tags">
+            <span class="tag">Adobe Illustrator</span>
+          </div>
+        </article>
+        <article class="card project-card reveal" data-category="design">
+          <img
+            class="project-img zoomable"
+            src="assets/project4.png"
+            alt="Scholarship Tracking System"
+          />
+          <h2>Comic Book Design</h2>
+          <p class="muted">
+            A creative comic-book illustration project showcasing storytelling
+            and visual design skills.
+          </p>
+          <div class="tags">
+            <span class="tag">Adobe Illustrator</span>
+          </div>
+        </article>
+        <article class="card project-card reveal" data-category="networking">
+          <img
+            class="project-img zoomable"
+            src="assets/project5.png"
+            alt="Network Topology Connectivity"
+          />
+          <h2>Network Topology Connectivity</h2>
+          <p class="muted">
+            A detailed diagram of network connections and configurations for
+            efficient data flow and communication.
+          </p>
+          <div class="tags">
+            <span class="tag">Cisco Packet Tracer</span>
+          </div>
+        </article>
+      </section>
+    </main>
+    <div id="modal" class="modal">
+      <button id="modalClose" aria-label="Close">×</button
+      ><img id="modalImg" alt="Project preview" />
+    </div>
+    <footer class="footer">
+      <div class="container">© 2026 Arvin Buenavista · Personal Portfolio</div>
+    </footer>
+    <button id="topBtn" class="top-btn" aria-label="Scroll to top">↑</button>
+    <script src="assets/script.js"></script>
+  </body>
+</html>

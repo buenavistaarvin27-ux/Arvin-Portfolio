@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="Arvin Buenavista personal portfolio" />
+    <title>About · Arvin Buenavista</title>
+    <script>
+      (() => {
+        const savedTheme = localStorage.getItem("portfolio-theme");
+        const prefersLight = window.matchMedia("(prefers-color-scheme: light)").matches;
+        if (savedTheme === "light" || (!savedTheme && prefersLight)) {
+          document.documentElement.classList.add("light");
+        }
+      })();
+    </script>
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="logo" href="index.html">Arvin<span>.</span></a
+        ><button class="menu-btn" aria-label="Open menu">☰</button>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <button class="theme-btn desktop-theme" aria-label="Toggle theme">
+          ☾
+        </button>
+      </div>
+    </header>
+    <main class="container page">
+      <header class="page-head reveal">
+        <div class="eyebrow">About Me</div>
+        <h1>Background & Goals</h1>
+        <p>
+          A simple introduction to my academic journey, interests, and
+          direction.
+        </p>
+      </header>
+      <div class="grid two">
+        <article class="card reveal">
+          <h2>Background</h2>
+          <p class="muted">
+            I am a BSIT student from the Philippines who enjoys learning how
+            technology can solve everyday problems. My school projects have
+            given me experience in web development,
+            networking, and digital design.
+          </p>
+        </article>
+        <article class="card reveal">
+          <h2>Education</h2>
+          <p class="muted">Bachelor of Science in Information Technology</p>
+          <p class="muted">
+            Focused areas: programming, web technologies,
+            networking, and multimedia.
+          </p>
+        </article>
+        <article class="card reveal">
+          <h2>Goals</h2>
+          <p class="muted">
+            My goal is to become a capable IT professional who can build
+            reliable systems, keep learning new technologies, and work
+            effectively with a team.
+          </p>
+        </article>
+        <article class="card reveal">
+          <h2>Interests</h2>
+          <div class="tags">
+            <span class="tag">Programming</span
+            ><span class="tag">Web Design</span
+            ><span class="tag">Gaming</span><span class="tag">Anime</span
+            ><span class="tag">Digital Design</span>
+          </div>
+        </article>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">© 2026 Arvin Buenavista · Personal Portfolio</div>
+    </footer>
+    <button id="topBtn" class="top-btn" aria-label="Scroll to top">↑</button>
+    <script src="assets/script.js"></script>
+  </body>
+</html>

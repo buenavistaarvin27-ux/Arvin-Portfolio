@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="Arvin Buenavista personal portfolio" />
+    <title>Resume · Arvin Buenavista</title>
+    <script>
+      (() => {
+        const savedTheme = localStorage.getItem("portfolio-theme");
+        const prefersLight = window.matchMedia("(prefers-color-scheme: light)").matches;
+        if (savedTheme === "light" || (!savedTheme && prefersLight)) {
+          document.documentElement.classList.add("light");
+        }
+      })();
+    </script>
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="logo" href="index.html">Arvin<span>.</span></a
+        ><button class="menu-btn" aria-label="Open menu">☰</button>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <button class="theme-btn desktop-theme" aria-label="Switch to light mode">
+          Light mode
+        </button>
+      </div>
+    </header>
+    <main class="container page">
+      <header class="page-head">
+        <div class="eyebrow">Resume / Experience</div>
+        <h1>Education & Activities</h1>
+        <p>
+          A concise overview of my academic experience and practical learning.
+        </p>
+      </header>
+      <section class="timeline">
+        <article class="card timeline-item">
+          <small>Academic</small>
+          <h2>BS Information Technology</h2>
+          <p class="muted">
+            Developed foundations in programming, databases, networking, system
+            analysis, web development, and multimedia.
+          </p>
+        </article>
+        <article class="card timeline-item">
+          <small>Project Experience</small>
+          <h2>System Development Projects</h2>
+          <p class="muted">
+            Gained hands-on experience in web development, networking, and
+            digital design through academic projects.
+          </p>
+        </article>
+        <article class="card timeline-item accordion">
+          <button class="accordion-btn">Training & Learning</button>
+          <div class="accordion-content">
+            <p>
+              Hands-on practice with HTML, CSS, JavaScript, PHP, MySQL, Java,
+              Cisco Packet Tracer, and Adobe Illustrator
+            </p>
+          </div>
+        </article>
+        <article class="card timeline-item accordion">
+          <button class="accordion-btn">Academic Activities</button>
+          <div class="accordion-content">
+            <p>
+              Participated in presentations, network-topology activities,
+              multimedia projects, and collaborative
+              software development tasks.
+            </p>
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">© 2026 Arvin Buenavista · Personal Portfolio</div>
+    </footer>
+    <button id="topBtn" class="top-btn" aria-label="Scroll to top">↑</button>
+    <script src="assets/script.js"></script>
+  </body>
+</html>
